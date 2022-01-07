@@ -1,0 +1,140 @@
+.search {
+    margin: 30px auto 0px 40px;
+}
+
+.button_add {
+    margin: 30px 54px 0px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#alumno_search {
+    position: static;
+    width: 80px;
+    height: 20px;
+    left: 0px;
+    top: 10px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #121625;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+}
+
+#add_student {
+
+    position: absolute;
+    padding: 5px 14px 5px 10px;
+    text-align:right;
+
+    width: 168px;
+    height: 30px;
+    background: #FFFFFF;
+
+    border: 1px solid #E6E6EA;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #121625;
+
+    background-image: url(../images/add.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 30px;
+}
+
+#input_search {
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 15px;
+    position: relative;
+    width: 343px;
+    height: 30px;
+    background: #E6E6EA;
+    border-radius: 8px;
+    border: none;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 30px;
+}
+
+#input_search:focus{
+    outline: 2px solid #32D5A4;
+    box-shadow: 0 0 10px #32D5A4;
+}
+
+.table {
+    background: #FFFFFF;
+    border: 1px solid #E6E6EA;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 10px auto;
+    width: 90vw;
+}
+
+td {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #121625;
+}
+
+.etiqueta {
+    background: #32D5A4;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+}
+
+th {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    align-items: center;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #A5A8B3;
+}
+
+.orden_alfabetica {
+    color: #A5A8B3;
+    height: 15px;
+}
+
+.text-header {
+    cursor: pointer;
+}
