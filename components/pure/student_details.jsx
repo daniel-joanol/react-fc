@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const StudentDetails = () => {
+
     return (
     
             <div className="col-lg-4 col-md-6 col-sm-12">
@@ -36,7 +37,7 @@ const StudentDetails = () => {
                                 <div className="row">
                                     <div className="col">
                                         <p className="formulario_campo">País</p>
-                                        <select name="pais" id="pais" className="box" onchange="citiesList()">
+                                        <select name="pais" id="pais" className="box">
                                             <option value="España">España</option>
                                             <option value="Brasil">Brasil</option>
                                         </select>
@@ -75,7 +76,7 @@ const StudentDetails = () => {
                                 <div className="row">
                                     <div className="col">
                                         <p className="formulario_campo">Documento CV</p>
-                                        <label for="file-upload" id="custom_file_upload">
+                                        <label for="file-upload" className="custom_file_upload">
                                             <spam className="boton--texto boton--subir">Subir Archivo</spam>
                                         </label>
                                         <input id="file-upload" type="file" accept=".pdf"/>
@@ -100,8 +101,8 @@ const StudentDetails = () => {
                                 </div>
                                 <div className="row">
                                     <div className="col">
-                                        <spam className="etiqueta" style={ {display: 'none'} }>Angular<spam class="close" onclick="deleteTag('Angular')"></spam></spam> 
-                                        <spam className="etiqueta" style={ {display: 'none'} }>CSS - HTML<spam class="close" onclick="deleteTag('CSS - HTML')"></spam></spam>  
+                                        <spam className="etiqueta" >Angular<spam class="close" onclick="deleteTag('Angular')"></spam></spam> 
+                                        <spam className="etiqueta" >CSS - HTML<spam class="close" onclick="deleteTag('CSS - HTML')"></spam></spam>  
                                         <spam className="etiqueta" style={ {display: 'none'} }>Java<spam class="close" onclick="deleteTag('Java')"></spam></spam> 
                                         <spam className="etiqueta" style={ {display: 'none'} }>JavaScript<spam class="close" onclick="deleteTag('JavaScript')"></spam></spam> 
                                         <spam className="etiqueta" style={ {display: 'none'} }>Python<spam class="close" onclick="deleteTag('Python')"></spam></spam> 

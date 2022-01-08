@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router';
 
 import Foot from '../pure/foot_login';
@@ -11,9 +11,13 @@ const Login = () => {
         navigate(path);
     }
 
+    useEffect(() => {
+        document.body.style.backgroundColor='#FFF';
+    }, [])
+
     return (
         <div className="col left">
-            <form id="main_form" action="database_form.html"  method="post">
+            <form id="#main_form-login-page" action="database_form.html"  method="post">
                 <fieldset>
                     
                     <div>
@@ -21,12 +25,12 @@ const Login = () => {
                     </div>
                     <div>
                         <p className="nombre_campo">Email</p> 
-                        <input className="box" type="text" required id="password" name="email" placeholder="Introduce tu correo" />
+                        <input className="box-login-page" type="text" required id="password" name="email" placeholder="Introduce tu correo" />
                     </div>
 
                     <div>
                         <p className="nombre_campo">Contraseña</p>
-                        <input className="box" type="password" name="password" id="password" required placeholder="Introduce tu contraseña" />
+                        <input className="box-login-page" type="password" name="password" id="password" required placeholder="Introduce tu contraseña" />
                     </div>
                     
                     <div className="container2">
@@ -42,7 +46,7 @@ const Login = () => {
 
                     <div>
                         <p></p>
-                        <input className="button" type="submit" value="Enviar" onClick={ () => navigateTo('/alumnos') } />
+                        <input className="button" type="submit" value="Enviar" onClick={ () => navigateTo('/dashboard') } />
                     </div>
                     
                 </fieldset>

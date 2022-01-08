@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './styles/login_page_style.css'
 import './styles/students_table_style.css'
 import './styles/student_details_syle.css'
+import './styles/popup_style.css'
 
 import reportWebVitals from './reportWebVitals';
 import AppRouting from './AppRouting';

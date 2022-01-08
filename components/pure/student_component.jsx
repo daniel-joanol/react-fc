@@ -12,28 +12,7 @@ const StudentComponent = ({student}) => {
         navigate(path);
     }
 
-    function organizeTags (tags) {
-
-        console.log(tags);
-
-       /*  let spamTags = '';
     
-        for (let i = 0; i <tags.length; i++){
-            spamTags += <spam className="etiqueta"> newTags[i] </spam> + ' ';
-        }
-
-        console.log(spamTags); */
-
-        tags.map((tag) => {
-            console.log('got here')
-            return (
-                <spam className='etiqueta'>{tag}</spam>   
-            )
-        })
-
-/*         return spamTags;
- */        
-    }
 
     return (
 
@@ -43,7 +22,11 @@ const StudentComponent = ({student}) => {
             <td>{student.country}</td>
             <td>{student.phoneNumber}</td>
             <td>{student.email}</td>
-            <td>{organizeTags(student.tags)}</td>
+            <td>{student.tags.map((tag) => {
+            return (
+                <span className='etiqueta-table-page'>{tag}</span>
+            )
+        })}</td>
         </tr>
     );
 }

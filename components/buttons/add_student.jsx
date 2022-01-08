@@ -9,13 +9,12 @@ const AddStudent = () => {
   const togglePopup = () => {
     setIsOpen(!isOpen);
   }
- 
     return (
         <div className='button_add'>
             <button id='add_student' onClick={togglePopup}> Añadir alumno</button>
-            { isOpen && <Popup content={
-                <p>Testando</p>
-            }></Popup>}
+            {isOpen && <Popup
+            handleClose={togglePopup}
+    />}
         </div>
     );
 }
