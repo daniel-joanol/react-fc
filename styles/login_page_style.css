@@ -29,7 +29,8 @@ html, body {
 }
 
 #main_form-login-page{
-    margin-top: -50px;
+    margin: auto;
+    width: min-content;
 }
 
 .right {
